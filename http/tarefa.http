@@ -1,0 +1,24 @@
+POST http://localhost:3000/tarefa
+Content-Type: application/json
+
+{   
+    "tarefa":"Ler",
+    "UsuarioId":3,
+    "descricao":"Livro JS"
+}
+
+###
+GET http://localhost:3000/tarefas
+
+###
+PUT http://localhost:3000/tarefa/3
+Content-Type: application/json
+
+{
+    "tarefa":"estudar",
+    "descricao":"node.js"
+
+}
+
+###
+DELETE http://localhost:3000/tarefas/10
